@@ -31,7 +31,7 @@
         }
         hr {
             height: 4px; 
-            max-width: 48%; 
+            max-width: 36%; 
             width: 100%; 
             border: 0; 
             margin: 0 0 37px;
@@ -47,9 +47,12 @@
             margin-left: 2.5%;
             margin-top: 20px;
         }
-        .overlay-image {
+        .layout {
             max-width: 90%;
             margin-left: 5%;
+        }
+        .main-news {
+            margin-top: -2px;
         }
         .fonte {
             padding-top: 8px;
@@ -60,21 +63,28 @@
         }
         .rodape {
             text-align: center;
-            margin-top: -1px;
             padding: 10px 0;
             font-size: 10px;
+        }
+        .register {
+            margin-top: 8px;
+            margin-bottom: -4px;
+            color: #fc4c02;
+            background-color: #fbf0ec;
+        }
+        .outro  {
+            margin-top: -4px;
             color: black;
             background-color: rgb(237, 237, 237);
         }
-        /* Flexbox */
+        /* Flexbox Classes*/
         .two-column-segment {
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
         }
-        /* Style for each column within the two-column segment */
         .column {
-            flex-basis: 48%; /* Adjust to control the column width */
+            flex-basis: 48%;
         }
         .column1 {
             margin-left: 20px;
@@ -82,56 +92,70 @@
         .column2 {
             margin-right: 20px;
         }
+        .two-column-specifics {
+            max-width: 60%;
+        }
     </style>
 </head>
 <body>
     <table>
+        <!-- Header -->
         <tr>
             <td>
                 <img class="header-image" src="img/HEADER.png" alt="Manda Trends">
             </td>
         </tr>
+        <!-- Main News -->
         <tr>
             <td>
-                <img class="overlay-image" src="img/PRINCIPAL_Layer_18.png" alt="NRF 2020">
+                <img class="layout main-news" src="img/NRF2020.png" alt="NRF 2020">
             </td>
         </tr>
         <tr>
             <td>
-                <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
-                <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
+                <h3 class="layout">NRF 2020: conheça os top 5 assuntos do evento.</h3>
+                <p class="layout">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+                <p class="layout fonte">Fonte: CMO ADOBE</p>
                 <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
             </td>
         </tr>
+        <!-- News in two columns -->
         <tr>
             <td>
                 <div class="two-column-segment">
-                    <!-- First Column -->
+                    <!-- News on column 1 -->
                     <div class="column column1">
-                        <img class="overlay-image" src="img/nbaKobeLogo.png" alt="NRF 2020">
-                        <h3 class="overlay-image">Petição para colocar Kobe Bryant no logo da NBA.</h3>
-                        <p class="overlay-image fonte">Fonte: Daily Mail</p>
-                        <hr style="background: linear-gradient(to right, #76c6cf, #675ea5)">
+                        <img class="layout" src="img/KobeBryant.png" alt="NRF 2020">
+                        <h3 class="layout">Petição para colocar Kobe Bryant no logo da NBA.</h3>
+                        <p class="layout fonte">Fonte: Daily Mail</p>
+                        <hr class="two-column-specifics" style="background: linear-gradient(to right, #76c6cf, #675ea5)">
                     </div>
-                    <!-- Second Column -->
+                    <!-- News on column 2 -->
                     <div class="column column2">
-                        <img class="overlay-image" src="img/Whatsapp.png" alt="NRF 2020">
-                        <h3 class="overlay-image">Whatsapp terá função de pagamentos em 2020.</h3>
-                        <p class="overlay-image fonte">Fonte: Proxxima</p>
-                        <hr style="background: linear-gradient(to right, #75c7cf, #38b388)">
+                        <img class="layout" src="img/WhatsappPayment.png" alt="NRF 2020">
+                        <h3 class="layout">Whatsapp terá função de pagamentos em 2020.</h3>
+                        <p class="layout fonte">Fonte: Proxxima</p>
+                        <hr class="two-column-specifics" style="background: linear-gradient(to right, #75c7cf, #38b388)">
                     </div>
                 </div>
             </td>
         </tr>
+        <!-- Register -->
         <tr>
             <td>
-                <img class="overlay-image" src="img/RODAPE.png" alt="Mandarin">
+                <p class="rodape register layout">Deseja receber mais e-mails como este? <a href="github.com" class="register">Clique aqui e cadastre-se.</a></p>
             </td>
         </tr>
+        <!-- Logo -->
         <tr>
             <td>
-                <p class="rodape overlay-image">Copyright ® Mandarin. Todos os direitos reservados.<br>Caso não deseje mais receber nossos e-mails, por favor <span><a href="github.com">clique aqui</a></span></p>
+                <img class="layout" src="img/RODAPE.png" alt="Mandarin">
+            </td>
+        </tr>
+        <!-- Outro -->
+        <tr>
+            <td>
+                <p class="rodape outro layout">Copyright ® Mandarin. Todos os direitos reservados.<br>Caso não deseje mais receber nossos e-mails, por favor <a href="github.com">clique aqui.</a></p>
             </td>
         </tr>
     </table>
