@@ -41,6 +41,7 @@
         a {
             color: black;
         }
+        /* Classes */
         .header-image {
             width: 95%;
             margin-left: 2.5%;
@@ -64,6 +65,22 @@
             font-size: 10px;
             color: black;
             background-color: rgb(237, 237, 237);
+        }
+        /* Flexbox */
+        .two-column-segment {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        /* Style for each column within the two-column segment */
+        .column {
+            flex-basis: 48%; /* Adjust to control the column width */
+        }
+        .column1 {
+            margin-left: 20px;
+        }
+        .column2 {
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -89,41 +106,24 @@
         </tr>
         <tr>
             <td>
-                <img class="overlay-image" src="img/PRINCIPAL_Layer_18.png" alt="Header Image">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
-                <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
-                <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img class="overlay-image" src="img/PRINCIPAL_Layer_18.png" alt="Header Image">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
-                <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
-                <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img class="overlay-image" src="img/PRINCIPAL_Layer_18.png" alt="Header Image">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
-                <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
-                <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
+                <div class="two-column-segment">
+                    <!-- First Column -->
+                    <div class="column column1">
+                        <img class="overlay-image" src="img/Whatsapp.png" alt="NRF 2020">
+                        <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
+                        <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+                        <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
+                        <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
+                    </div>
+                    <!-- Second Column -->
+                    <div class="column column2">
+                        <img class="overlay-image" src="img/Whatsapp.png" alt="NRF 2020">
+                        <h3 class="overlay-image">NRF 2020: conheça os top 5 assuntos do evento.</h3>
+                        <p class="overlay-image">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+                        <p class="overlay-image fonte">Fonte: CMO ADOBE</p>
+                        <hr style="background: linear-gradient(to right, #e62259, #695ba3)">
+                    </div>
+                </div>
             </td>
         </tr>
         <tr>
